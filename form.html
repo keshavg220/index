@@ -55,7 +55,7 @@
         </div>
         
             <div class="bar">
-                <button class="btn btn-success" type="submit">LOGIN</button>
+                <button class="btn btn-success" onclick="validateForm(event)" type="submit">LOGIN</button>
             </div>
             
         <a href="#" class="text-blue right">SIGN UP</a>
@@ -68,17 +68,30 @@
 </div>
        
        
-    <script>  
+<script>  
 
-        function validateForm()  
+    function displayLoader() {
+        $("#loader").css("display", "block");
+            document.getElementById("email-address").value = "";
+            document.getElementById("password").value = "";
+    }
+
+    function showSuccess() {
+        window.open('./data.html');
+        $("#loader").css("display", "none");
+    }
+
+        function validateForm(event)  
         {  
+            event.preventDefault();
+            
             var info = [];
-        var x=document.myForm.user_email.value;
-         info.push(x);
-        var atposition=x.indexOf("@");  
-        var dotposition=x.lastIndexOf("."); 
-        var password=document.myForm.psword.value;
-         info.push(password);
+            var x=document.myForm.user_email.value;
+            info.push(x);
+            var atposition=x.indexOf("@");  
+            var dotposition=x.lastIndexOf("."); 
+            var password=document.myForm.psword.value;
+            info.push(password);
     
         if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
           alert("Please enter a valid e-mail address");  
@@ -95,17 +108,14 @@
     
     
         if (y===x && z===password)
-        { 
-            showpage();
-           
-        if($("#loader").length > 0)
-        {
-            $("#loader").fadeOut("3000");
-            window.open('./data.html');
-        }
-    }
- 
+        {             
+            displayLoader();
 
+            setTimeout(function(){
+                showSuccess();
+            }, 2000);
+   
+        }
         else
         {    
             if(y!==x && z===password){    
@@ -123,11 +133,6 @@
             alert("please check your details");
         }
     }
-}
-
-function showPage() {
-
-document.getElementById("#loader").style.display = "block";
 }
 
               
