@@ -1,0 +1,66 @@
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {box-sizing: border-box}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+     background-color: #ddd;
+     outline: none;
+  }
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  .bar button{
+      border: 1px;
+      background: rgb(42, 94, 190);
+      text-align: center;
+      cursor: pointer;
+  }
+  .container1,.container2{
+      font-size:900%;  
+      text-align: center;
+      width: 100%;
+      font-weight: 900;
+      height: 900px;
+      margin-top: 300px;
+      color:green;
+      
+  }
+  .container2{
+      color: black;
+  }
+  .container{
+      background-color: currentColor;
+  }
+  #loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    display: none;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
