@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/form-validation.js"></script>
+        <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+           
+        
+    </head>
+    <body>
+
+        <div class="top align">
+        <div class="bar black">
+            
+            <a class="bar-item button padding-large hide-medium hide-large right col-md-4" href="javascript:void(0)" onclick="myFunction()" title="Navigation Menu">
+              <i class="fa fa-home">      
+              </i>
+            </a>
+            <a href="#" class="bar-item button padding-large">HOME</a>
+            <a href="#BAND" class="bar-item button padding-large hide-small">BAND</a>
+            <a href="#TOUR" class="bar-item button padding-large hide-small">TOUR</a>
+            <a href="#CONTACT" class="bar-item button padding-large hide-small">CONTACT</a>
+            <div class="dropdown-hover hide-small ">
+                <button class="padding large button more" id="more" title="MORE">MORE
+               
+                    <i class="fa fa-caret-down">
+                    </i>      
+                </button>
+                  
+            
+            </div>
+             <div id="dropdown-menu">
+                    <a class="inline-block" href="#">About us</a>
+                    <a class="inline-block" href="#">Contact us</a>
+                    <a class="inline-block" href="#">Privacy</a>
+                    <a class="inline-block" href="#">Info</a>
+                </div>
+           
+            <a href="javascript:void(0)" class="padding large hover-red hide-small right">
+                <i class="fa fa-search">
+                
+                </i>
+            </a>
+
+            </div>
+        </div>
+      <div id="navDemo" class="bar-block blue hide hide-large hide-medium top" style="margin-top: 40px !important">
+        <a href="#band" class="bar-item button  padding-large" onclick="myFunction()">BAND</a>
+        <a href="#tour" class="bar-item button padding-large" onclick="myFunction()">TOUR</a>
+        <a href="#contact" class="bar-item button padding-large" onclick="myFunction()">CONTACT</a>
+        <a href="#" class="bar-item button padding-large" onclick="myFunction()">HOME</a>
+        <a href="#MORE" class="bar-item button padding-large more" onclick="myFunction()">MORE</a>
+    </div>
+    <div class="content small-m3" id="mobile" style="max-width:2000px; margin-top:40px">
+    <div class="mySlides display-container center " style="display: none">
+        <img src="https://www.w3schools.com/w3images/la.jpg" style="width: 100%">
+        <div class="display-bottommiddle container text-white padding-32 hide-small ">
+            <h3>Los Angels</h3>
+            <p>
+                <b>we had the nice time playing at venice beach</b>
+            </p>
+        </div>
+    </div>
+    <div class="mySlides display-container center " style="display: block">
+        <img src="https://www.w3schools.com/w3images/ny.jpg" style="width: 100%">
+        <div class="display-bottommiddle container text-white padding-32 hide-small">
+                <h3>New York</h3>
+                <p>
+                    <b>The City That Not Sleeps</b>
+                </p>
+                </div>
+    </div>
+    <div class="mySlides display-container center" style="display: none;">
+        <img src="https://www.w3schools.com/w3images/chicago.jpg" style="width: 100%;">
+        <div class="display-bottommiddle container text-white padding-32 hide-small">
+                <h3>Chicago</h3>
+                <p>
+                 <b>A Night We Won't Forget</b>
+                </p>
+             </div>
+        </div>
+        <div class="container content center padding-64 popup " style="max-width: 800px" id="band">
+        <h2 class="wide color-red">THE BAND</h2>
+        <p class="opacity">
+            <i>We Love Music</i>
+        </p>
+        <p class="justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="row padding-32 ">
+                <div class="third">
+                    <p class="centre">Name</p>
+                    <img class="transparent" src="https://www.w3schools.com/w3images/bandmember.jpg" class="round margin-bottom" alt="random name" style="width: 60%">
+                </div>
+                <div class="third">
+                        <p class="centre">Name</p>
+                        <img class="transparent" src="https://www.w3schools.com/w3images/bandmember.jpg" class="round margin-bottom" alt="random name" style="width: 60%">
+                    </div>
+                    <div class="third">
+                            <p class="centre">Name</p>
+                            <img class="transparent" src="https://www.w3schools.com/w3images/bandmember.jpg" class="round margin-bottom" alt="random name" style="width: 60%">
+                
+                        </div>
+                       
+            </div>
+            
+        </div>
+       
+       
+        <div class="black" id="tour">
+            <div class="container content padding-64" style="max-width: 800px">
+            <h2 class="wide center">TOUR DATES</h2>
+            <p class="opacity center">
+                <i>Remember To Book Your Tickets</i>
+            </p>
+            <br>
+            <ul class="ul border white-background text-grey">
+                <li class="padding border-bottom-grey">
+                    <span class="black-color ">September</span>
+                    
+                    <span class="tag red margin-left soldout">Sold Out</span>
+                </li>
+                <li class="padding border-bottom-grey">
+                        <span class="black-color ">October</span>
+                    
+                    <span class="tag red margin-left soldout">Sold Out</span>
+                </li>
+                <li class="padding border-bottom-grey">
+                   <span class="black-color">November</span>
+                    <span class="tag red margin-left right black-color badge">3</span>
+                </li>
+            </ul>
+            <div class="row-padding padding-32 " style="margin:0 -16px">
+                <div class="row ">
+                    <div class="col-md-4">
+                        <div class="third margin-bottom">
+                            <img class="transparent" src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York" style="width:100%" class="hover-opacity">
+                            <div class="container white-background text-black">
+                              <p>
+                                  <b>New York</b>
+                              </p>
+                              <p class="opacity">
+                                  Fri 27 Nov 2016
+                              </p>
+                              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                              <button class="button black margin-bottom bordour" onclick="fnOpenForm()">Buy Tickets</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="third margin-bottom">
+                            <img class="transparent" src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris" style="width:100%" class="hover-opacity">
+                            <div class="container white-background text-black">
+                              <p>
+                                  <b>Paris</b>
+                              </p>
+                              <p class="opacity">
+                                  Sat 28 Nov 2016
+                              </p>
+                              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                              <button class="button black margin-bottom bordour"  onclick="fnOpenForm()">Buy Tickets</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="third margin-bottom">
+                            <img class="transparent" src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="hover-opacity">
+                            <div class="container white-background text-black">
+                              <p>
+                                  <b>San Francisco</b>
+                              </p>
+                              <p class="opacity">
+                                  Sun 29 Nov 2016
+                              </p>
+                              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                              <button class="button black margin-bottom bordour"  onclick="fnOpenForm()">Buy Tickets
+                              </button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+
+
+                  </div>
+            </div>
+        </div>
+        <div id="ticketModal" class="modal">
+                <div class="modal-content animate-top card-4">
+                  <header class="container teal center padding-32"> 
+                    <span onclick="document.getElementById('ticketModal').style.display='none'" class="button teal xlarge display-topright right">×</span>
+                    <h2 class="wide">
+                        <i class="fa fa-suitcase margin-right">
+                            
+                        </i>
+                        Tickets 
+                    </h2>
+                  </header>
+                  <div class="container padding-16">
+                    <p>
+                        <label>
+                            <i class="fa fa-shopping-cart">..</i> 
+                            Tickets, $15 per person 
+                        </label>
+                    </p>
+                    <input class="input border padding-16 margin-top" type="text" placeholder="How many?">
+                    <p>
+                        <label>
+                            <i class="fa fa-user ">..</i>
+                             Send To 
+                        </label>
+                    </p>
+                    <input class="input border" type="text" placeholder="Enter email">
+                    <button class="button block teal padding-16 section right red">
+                        PAY  
+                        <i class="fa fa-check"></i>
+                    </button>
+                    <button class="button yash section" onclick="document.getElementById('ticketModal').style.display='none'">
+                        Close  
+                        <i class="fa fa-remove"></i>
+                    </button>
+                    <p class="right margin-top">
+                        Need  
+                        <a href="#" class="text-blue">help?</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="container content padding-64" style="max-width:800px" id="contact">
+                    <h2 class="wide center">CONTACT</h2>
+                    <p class="opacity center">
+                        <i>Fan? Drop a note!</i>
+                    </p>
+                    <div class="row padding-32">
+                      <div class="col m6 large margin-bottom">
+                        <i class="fa fa-map-marker" style="width:30px">
+                        
+                        </i>
+                        Chicago, US 
+                        <br>
+                        <i class="fa fa-phone" style="width:30px">
+                        
+                        </i>
+                        Phone: +00 151515 
+                        <br>
+                        <i class="fa fa-envelope" style="width:30px">
+                        
+                        </i>
+                        Email: mail@mail.com 
+                        <br>
+                      </div>
+                      <div class="col m6">
+                        <form id="myForm" name="registration" onsubmit="storeForm()">
+                          <div class="row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="half space">
+                               
+                                <input type="text" class="input border" name="fname" required name="Name" placeholder="Name" value=""></input>
+ 
+                            </div>
+                            <div class="half">
+                              
+                                <input type="email" class="input border" name="user_email" required email="Email" placeholder="Email" value=""></input>
+                            </div>
+                          </div>
+                          
+                          <input type="text" class="input border" name="psword" required password="Message" placeholder="Message" value=""></input>
+                          <button class="button black section right soldout" type="submit">SEND</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+    </div>
+    <img src="https://www.w3schools.com/w3images/map.jpg" class="image greyscale-min" style="width: 100%">
+    <footer class="container padding-64 center opacity light-grey xlarge">
+            <i class="fa fa-facebook-official hover-opacity">
+                
+            </i>
+            <i class="fa fa-instagram hover-opacity">
+
+            </i>
+            <i class="fa fa-snapchat hover-opacity">
+                
+            </i>
+            <i class="fa fa-pinterest-p hover-opacity">
+                
+            </i>
+            <i class="fa fa-twitter hover-opacity">
+                
+            </i>
+            <i class="fa fa-linkedin hover-opacity">
+                
+            </i>
+            <p class="medium">
+                Powered by
+             <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+          </footer>
+           <div class="overlay" style="display: none;"></div>
+         <div class="show">
+               
+                <div class="img-show">
+                    <span>X</span>
+                    <img src=" ">
+                  </div>
+            </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $('#dropdown-menu').hide();
+
+      $("#more, #dropdown-menu").mouseenter(function(){
+       $("#dropdown-menu").show();
+      
+
+      });
+                  
+     $("#more, #dropdown-menu").mouseleave(function(){
+     
+        $("#dropdown-menu").hide();
+     
+    });
+
+    });
+        function fnOpenForm(){
+          $('#ticketModal').show();
+          $("html,body").css("overflow","hidden");
+          $(".overlay").show();
+        }
+
+
+    $(function () {
+         
+    $(".popup img").click(function () {
+        var $src = $(this).attr("src");
+        $(".show").fadeIn();
+        $(".overlay").show();
+        $("html,body").css("overflow","hidden");
+       $(".img-show img").attr("src", $src);
+       // $("html,body").css("opacity","0.6");
+        
+    });
+    $(".show").fadeIn();
+
+    $("span,.overlay").click(function () {
+        $(".show").fadeOut();
+        $("html,body").css("overflow","unset");
+         $(".overlay").hide();
+         $('#ticketModal').hide();
+       
+    });
+
+    $(".popup").dblclick(function(){
+        $(".show").fadeOut();
+        $("html,body").css("overflow","unset");
+    });
+    
+});
+        
+              
+            var myIndex=0;
+            carouse1();
+  
+            function carouse1()
+            {
+              var i;
+              var x=document.getElementsByClassName("mySlides");
+              for( i= 0; i < x.length; i++)
+              {
+                  
+                 x[i].style.display= "none";
+              }
+              myIndex++;
+              if( myIndex > x.length)
+              {
+                  myIndex=1;
+                  }
+              x[myIndex-1].style.display= "block";
+              setTimeout(carouse1, 4000);    
+  
+            }
+            function myFunction()
+            {
+                var x=document.getElementById( "navDemo");
+                if( x.className.indexOf("show")== -1){
+                    x.className += "show";
+                    }
+                 else{
+                     x.className=x.className.replace( "show","");
+                 }   
+                 }
+               var modal = document.getElementById( "ticketModal");
+              window.onclick= function(event){
+                  if( event.target==modal){
+                      modal.style.display= "none";
+  
+                  }
+          }
+
+ 
+
+function storeForm() {
+    var info = [];
+    var name_val = document.getElementById("myForm")[0].value;
+    info.push(name_val);
+    var email_val = document.getElementById("myForm")[1].value;
+    info.push(email_val);
+    var message_val = document.getElementById("myForm")[2].value;
+    info.push(message_val);
+
+    info.map(function( item ) {
+        console.log(item);
+    });
+
+    var newUser = {name: name_val, email: email_val, message: message_val} 
+
+console.log(newUser);
+
+localStorage.setItem('users', JSON.stringify(newUser));
+
+
+// var json = JSON.stringify(newUser);
+//               var fs = require('fs');
+//               fs.writeFile(test.json,json,'utf-8');
+
+// var file=fopen("test.json",0);
+
+// var str = "tedfgdfgdfgst";
+
+// fwrite(file, str);
+
+
+// $.getJSON( "test.json", function( data ) {
+//   alert( data );
+
+//   var newUser = {name: name_val, email: email_val, message: message_val} 
+
+//   console.log(newUser);
+
+//   //data.push(newMovie);      
+// });
+
+
+
+}
+  </script>
+ 
+</html>
