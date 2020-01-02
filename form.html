@@ -17,10 +17,11 @@
 </head>
 
 <body>
-    <div class="container"> 
-       
+    <div class="page">
+    
+        <div class="container">
         <form  name="myForm" id="second_form" class="content" method="post" onsubmit="validateForm()">
-            <div class="jumbotron">
+            <div class="jumbo">
                
                 
                 <blockquote>
@@ -30,31 +31,42 @@
                     </p>
                     </blockquote>
             <hr>    
-
+        <div>
+            <i class="fa fa-user" aria-hidden="true"></i>
             <label for="email"><b>Email</b></label>
             <input autocapitalize="off" type="text" placeholder="Enter Email" name="user_email" required> 
-        
+        </div>
+        <div>
+            <i class="fa fa-unlock" aria-hidden="true"></i>
             <label for="password"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psword" required>
-
+        </div>
+        <div class="row"> 
+        <div class="col-md-6">
             <label>
                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
               </label>
+            </div>
+            <div class="col-md-6 right">
+                <a href="#" class="text-blue "> Forgot Password?</a>
+
+
+            </div>
+        </div>
         
             <div class="bar">
                 <button class="btn btn-success" type="submit">LOGIN</button>
             </div>
             
-       
+        <a href="#" class="text-blue right">SIGN UP</a>
             
         </div>
-        
-        </form>
         <div id="loader"></div>
-    </div>
-    
-   
-
+        </form>
+        
+   </div>
+</div>
+       
        
     <script>  
 
@@ -83,16 +95,17 @@
     
     
         if (y===x && z===password)
+        { 
+            showpage();
+           
+        if($("#loader").length > 0)
         {
-   setTimeout(showPage(), 3000);
-   window.open('./data.html');
-
-    function showPage() {
-    document.getElementById("#loader").style.display = "block";
-  
-}
-         
+            $("#loader").fadeOut("3000");
+            window.open('./data.html');
         }
+    }
+ 
+
         else
         {    
             if(y!==x && z===password){    
@@ -110,6 +123,11 @@
             alert("please check your details");
         }
     }
+}
+
+function showPage() {
+
+document.getElementById("#loader").style.display = "block";
 }
 
               
